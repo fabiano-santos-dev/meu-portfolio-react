@@ -1,0 +1,238 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 76px);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: #020817;
+  color: #ffffff;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 70px 0;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.hero-subtitle {
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #3b82f6;
+}
+
+.hero-content h1 {
+  margin: 0 0 8px;
+
+  font-size: clamp(48px, 6vw, 72px);
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.hero-content h1 span {
+  color: #3b82f6;
+}
+
+.hero-content h2 {
+  margin-bottom: 20px;
+
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.2;
+
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-description {
+  max-width: 600px;
+
+  margin-bottom: 32px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #cbd5e1;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+
+  color: #ffffff;
+
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+  border: 1px solid #94a3b8;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  border-color: #3b82f6;
+
+  background: rgba(59, 130, 246, 0.1);
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social-links {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #e2e8f0;
+
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #3b82f6;
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   FOTO
+========================= */
+
+.hero-image {
+  position: relative;
+
+  flex: 1;
+
+  min-height: 280px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-circle {
+  position: absolute;
+
+  width: 370px;
+  height: 370px;
+
+  border-radius: 50%;
+
+  background: #172554;
+
+  opacity: 0.9;
+
+  box-shadow: 0 0 80px rgba(37, 99, 235, 0.35);
+
+  z-index: 0;
+}
+
+.profile-image {
+  position: relative;
+  z-index: 2;
+
+  width: 360px;
+  max-width: 100%;
+
+  object-fit: contain;
+
+  align-self: flex-end;
+
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.45));
+}
+
+/* =========================
+   BRILHO AZUL
+========================= */
+
+.hero-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: 50%;
+  right: 15%;
+
+  transform: translateY(-50%);
+
+  background: #2563eb;
+
+  opacity: 0.12;
+
+  filter: blur(100px);
+
+  border-radius: 50%;
+}

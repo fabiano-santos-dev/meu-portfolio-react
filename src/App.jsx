@@ -1,9 +1,14 @@
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Sobre from './components/Sobre';
 import './App.css';
 
 function App() {
   return(
     <>
-      <h1>Testando portifolio</h1>
+     <Header />
+     <Hero />
+     <Sobre />
     </>
 
   ) 
