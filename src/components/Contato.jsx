@@ -1,3 +1,5 @@
+import { Mail, MapPin, Briefcase } from 'lucide-react';
+
 import '../css/contato.css';
 
 function Contato() {
@@ -15,16 +17,28 @@ function Contato() {
         <div className='contato-layout'>
           <div className='contato-info'>
             <div className='contato-item'>
+              <div className='contato-icon'>
+                <Mail size={28} />
+              </div>
               <h3>Email</h3>
+
               <p>fasnaweb2020@gmail.com</p>
             </div>
 
             <div className='contato-item'>
+              <div className='contato-icon'>
+                <MapPin size={28} />
+              </div>
+
               <h3>Localização</h3>
               <p>Brasil</p>
             </div>
 
             <div className='contato-item'>
+              <div className='contato-icon'>
+                <Briefcase size={28} />
+              </div>
+
               <h3>Disponibilidade</h3>
               <p>Aberto a novos projetos</p>
             </div>
