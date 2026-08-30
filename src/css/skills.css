@@ -1,0 +1,98 @@
+.skills {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.skills .section-subtitle {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+  color: #0f172a;
+}
+
+.skills-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card {
+  padding: 35px 20px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.skill-card svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  color: #0f172a;
+  font-size: 18px;
+}
+.skill-card svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+/* Cores das tecnologias */
+
+.skill-card:nth-child(1) svg {
+  color: #e34f26;
+}
+
+.skill-card:nth-child(2) svg {
+  color: #1572b6;
+}
+
+.skill-card:nth-child(3) svg {
+  color: #f7df1e;
+}
+
+.skill-card:nth-child(4) svg {
+  color: #61dafb;
+}
+
+.skill-card:nth-child(5) svg {
+  color: #f05032;
+}
+
+.skill-card:nth-child(6) svg {
+  color: #181717;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 0;
+  }
+
+  .skills h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
