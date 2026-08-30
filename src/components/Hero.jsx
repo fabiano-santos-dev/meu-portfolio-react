@@ -58,7 +58,7 @@ function Hero() {
           <div className='hero-circle'></div>
 
           <img
-            src='/nova foto.png'
+            src='/fas2.png'
             alt='Fabiano Alves'
             className='profile-image'
           />

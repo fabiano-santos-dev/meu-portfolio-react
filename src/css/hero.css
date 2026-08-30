@@ -200,17 +200,15 @@
 }
 
 .profile-image {
-  position: relative;
-  z-index: 2;
-
-  width: 360px;
-  max-width: 100%;
-
-  object-fit: contain;
-
-  align-self: flex-end;
-
-  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.45));
+    position: relative;
+    z-index: 2;
+    width: 492px;
+    max-width: 100%;
+    object-fit: contain;
+    align-self: flex-end;
+    filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.45));
+    border-radius: 23px;
+    /* height: 604px; */
 }
 
 /* =========================

@@ -41,7 +41,9 @@
   }
 
   .about-image img {
-    height: 350px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
   }
 
   .about-content {
