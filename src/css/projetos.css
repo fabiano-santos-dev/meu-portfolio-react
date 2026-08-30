@@ -120,3 +120,24 @@
 .projeto-link:hover {
   background: #1d4ed8;
 }
+#cor-texto{
+  color: rgb(28, 101, 238);
+}
+@media (max-width: 768px) {
+  .projetos {
+    padding: 70px 0;
+  }
+
+  .projetos h2 {
+    font-size: 32px;
+  }
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-image img {
+    height: auto;
+    object-fit: contain;
+  }
+}

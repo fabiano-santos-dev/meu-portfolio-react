@@ -15,8 +15,8 @@ function Projetos() {
 
           <div className='projeto-content'>
             <h3>
-              CONSTRULINK - Conectando clientes aos profissionais certos para
-              cada serviço.
+              <span id='cor-texto'>Construlink</span> - Conectando clientes aos
+              profissionais certos para cada serviço.
             </h3>
 
             <p>
@@ -34,7 +34,11 @@ function Projetos() {
               <span>REACT</span>
             </div>
 
-            <a href='#' className='projeto-link'>
+            <a
+              href='https://github.com/NatanSamuel52/Contrulink'
+              target='_blank'
+              className='projeto-link'
+            >
               Ver projeto
             </a>
           </div>
@@ -47,19 +51,25 @@ function Projetos() {
           </div>
 
           <div className='projeto-content'>
-            <h3>Meu Portfólio</h3>
+            <h3>
+              <span id='cor-texto'>Meu Portifólio</span>
+            </h3>
 
             <p>
               Portfólio pessoal desenvolvido com React, JavaScript, HTML e CSS.
             </p>
 
             <div className='projeto-techs'>
-              <span>REAACT</span>
+              <span>REACT</span>
               <span>JAVASCRIPT</span>
               <span>CSS</span>
             </div>
 
-            <a href='#' className='projeto-link'>
+            <a
+              href='https://github.com/fabiano-santos-dev/meu-portfolio-react'
+              target='_blank'
+              className='projeto-link'
+            >
               Ver projeto
             </a>
           </div>

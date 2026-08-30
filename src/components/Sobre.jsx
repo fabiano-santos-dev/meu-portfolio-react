@@ -14,7 +14,7 @@ function About() {
           <h2>Um pouco sobre mim</h2>
 
           <p>
-            Sou estudante de desenvolvimento web e estou sempre em busca de
+            Sou estudante de Análise e Desenvolvimento de Sistemas e estou sempre em busca de
             novos conhecimentos. Gosto de transformar ideias em projetos reais e
             funcionais.
           </p>
