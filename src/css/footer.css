@@ -62,6 +62,36 @@
   color: #94a3b8;
   font-size: 14px;
 }
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #475569;
+  border-radius: 50%;
+
+  color: #cbd5e1;
+
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* ---------- midea -----*/
 @media (max-width: 768px) {
   .footer {
     padding: 40px 0 20px;
@@ -79,5 +109,9 @@
 
   .footer-links {
     align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
   }
 }
