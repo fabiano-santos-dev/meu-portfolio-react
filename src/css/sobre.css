@@ -23,9 +23,11 @@
 .about-image img {
   height: 350px;
   object-fit: cover;
-  margin-left: 30px;
+  margin-left: 75px;
+  border: 1px solid #c7cfcfe7;
+  border-radius: 14px;
+  margin-top: 11px;
 }
-
 .about-content {
   max-width: 600px;
 }

@@ -10,7 +10,7 @@ function Projetos() {
         {/* PROJETO 1 */}
         <article className='projeto-card'>
           <div className='projeto-image'>
-            <img src='/01_home.png' alt='Construlink' />
+            <img src='/construlink_home.png' alt='Construlink' />
           </div>
 
           <div className='projeto-content'>
@@ -47,7 +47,7 @@ function Projetos() {
         {/* PROJETO 2 */}
         <article className='projeto-card'>
           <div className='projeto-image'>
-            <img src='/portifolio.png' alt='Meu Portfólio' />
+            <img src='/projeto_portifolio.png' alt='Meu Portfólio' />
           </div>
 
           <div className='projeto-content'>
@@ -56,7 +56,8 @@ function Projetos() {
             </h3>
 
             <p>
-              Portfólio pessoal desenvolvido com React, JavaScript, HTML e CSS.
+              Portfólio pessoal desenvolvido com Html, CSS, JavaScript, React,
+              Git e Git-Hub.
             </p>
 
             <div className='projeto-techs'>

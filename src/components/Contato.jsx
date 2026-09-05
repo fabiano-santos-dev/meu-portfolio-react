@@ -31,7 +31,7 @@ function Contato() {
               </div>
 
               <h3>Localização</h3>
-              <p>Brasil</p>
+              <p>Brasil, Itajubá - Minas Gerais</p>
             </div>
 
             <div className='contato-item'>
@@ -49,7 +49,7 @@ function Contato() {
 
             <input type='email' placeholder='Seu email' />
 
-            <textarea placeholder='Sua mensagem' rows='6'></textarea>
+            <textarea placeholder='Sua mensagem' rows='13'></textarea>
 
             <button type='submit'>Enviar mensagem</button>
           </form>

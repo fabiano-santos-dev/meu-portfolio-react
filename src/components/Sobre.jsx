@@ -5,7 +5,7 @@ function About() {
     <section id='sobre' className='about'>
       <div className='container about-container'>
         <div className='about-image'>
-          <img src='/nova foto.png' alt='Fabiano Alves' />
+          <img src='/fs2.png' alt='Fabiano Alves' />
         </div>
 
         <div className='about-content'>
@@ -21,7 +21,7 @@ function About() {
 
           <p>
             Atualmente estou focado em aprender cada vez mais sobre React,
-            JavaScript, Git e Git-Hub e boas práticas de desenvolvimento.
+            JavaScript, Git e Git-Hub, Desenvolvimento React Native e boas práticas de desenvolvimento.
           </p>
 
           <div className='about-cards'>
