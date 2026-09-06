@@ -11,6 +11,7 @@ function Header() {
   }
 
   return (
+    <>
     <header className='header'>
       <div className='container header-container'>
         <a href='#inicio' className='logo' onClick={closeMenu}>
@@ -48,6 +49,7 @@ function Header() {
         </button>
       </div>
     </header>
+    </>
   );
 }
 
