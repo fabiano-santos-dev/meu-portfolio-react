@@ -1,9 +1,12 @@
 import '../css/hero.css';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Download, Mail, X } from 'lucide-react';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import fotoPerfil_hero from '../assets/fs1.png';
+import { useState } from 'react';
 
 function Hero() {
+  const [curriculoAberto, setCurriculoAberto] = useState(false);
   return (
     <>
       <section id='inicio' className='hero'>
@@ -31,8 +34,12 @@ function Hero() {
                 <ArrowRight size={20} />
               </a>
 
-              <a href='/curriculo.pdf' className='btn btn-secondary' download>
-                Baixar currículo
+              <a
+                className='btn btn-secondary'
+                onClick={() => setCurriculoAberto(true)}
+                download
+              >
+                Ver currículo
                 <Download size={19} />
               </a>
             </div>
@@ -72,6 +79,34 @@ function Hero() {
           </div>
         </div>
       </section>
+      {curriculoAberto && (
+        <div className='curriculo-modal'>
+          <div className='curriculo-container'>
+            <button
+              className='curriculo-fechar'
+              onClick={() => setCurriculoAberto(false)}
+              aria-label='Fechar currículo'
+            >
+              <X size={24} />
+            </button>
+
+            <iframe
+              src='/curriculo.pdf'
+              title='Currículo de Fabiano Alves'
+              className='curriculo-pdf'
+            />
+
+            <a
+              href='/curriculo.pdf'
+              download
+              className='btn btn-secondary curriculo-download'
+            >
+              Baixar currículo
+              <Download size={19} />
+            </a>
+          </div>
+        </div>
+      )}
     </>
   );
 }
