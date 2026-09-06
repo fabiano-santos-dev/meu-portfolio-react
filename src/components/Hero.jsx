@@ -90,11 +90,13 @@ function Hero() {
               <X size={24} />
             </button>
 
-            <iframe
-              src='/curriculo.pdf'
-              title='Currículo de Fabiano Alves'
-              className='curriculo-pdf'
-            />
+        
+              <img
+                src='/curriculo-preview.png'
+                alt='Currículo de Fabiano Alves'
+                className='curriculo-imagem'
+              />
+            
 
             <a
               href='/curriculo.pdf'
