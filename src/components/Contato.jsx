@@ -1,8 +1,44 @@
 import { Mail, MapPin, Briefcase } from 'lucide-react';
+import { useState } from 'react';
 
 import '../css/contato.css';
 
 function Contato() {
+  const [enviando, setEnviando] = useState(false);
+  const [mensagemEnviada, setMensagemEnviada] = useState(false);
+  const [erro, setErro] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    setEnviando(true);
+    setMensagemEnviada(false);
+    setErro(false);
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xyeydenr', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        setMensagemEnviada(true);
+        event.target.reset();
+      } else {
+        setErro(true);
+      }
+    } catch {
+      setErro(true);
+    } finally {
+      setEnviando(false);
+    }
+  };
+
   return (
     <>
       <section id='contato' className='contato'>
@@ -45,14 +81,30 @@ function Contato() {
               </div>
             </div>
 
-            <form className='contato-form'>
-              <input type='text' placeholder='Seu nome' />
+            <form className='contato-form' onSubmit={handleSubmit}>
+              <input type='text' placeholder='Seu nome' name='name' />
 
-              <input type='email' placeholder='Seu email' />
+              <input type='email' placeholder='Seu email' name='email' />
 
-              <textarea placeholder='Sua mensagem' rows='13'></textarea>
+              <textarea
+                placeholder='Sua mensagem'
+                rows='13'
+                name='message'
+              ></textarea>
+              <button type='submit' disabled={enviando}>
+                {enviando ? 'Enviando...' : 'Enviar mensagem'}
+              </button>
+              {mensagemEnviada && (
+                <p className='mensagem-sucesso'>
+                  ✅ Mensagem enviada com sucesso!
+                </p>
+              )}
 
-              <button type='submit'>Enviar mensagem</button>
+              {erro && (
+                <p className='mensagem-erro'>
+                  ❌ Não foi possível enviar a mensagem. Tente novamente.
+                </p>
+              )}
             </form>
           </div>
         </div>
