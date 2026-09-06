@@ -12,43 +12,43 @@ function Header() {
 
   return (
     <>
-    <header className='header'>
-      <div className='container header-container'>
-        <a href='#inicio' className='logo' onClick={closeMenu}>
-          Meu<span>Portfólio</span>
-        </a>
-
-        <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
-          <a href='#inicio' onClick={closeMenu}>
-            Início
+      <header className='header'>
+        <div className='container header-container'>
+          <a href='#inicio' className='logo' onClick={closeMenu}>
+            Meu<span>Portfólio</span>
           </a>
 
-          <a href='#sobre' onClick={closeMenu}>
-            Sobre
-          </a>
+          <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
+            <a href='#inicio' onClick={closeMenu}>
+              Início
+            </a>
 
-          <a href='#skills' onClick={closeMenu}>
-            Skills
-          </a>
+            <a href='#sobre' onClick={closeMenu}>
+              Sobre
+            </a>
 
-          <a href='#projetos' onClick={closeMenu}>
-            Projetos
-          </a>
+            <a href='#skills' onClick={closeMenu}>
+              Skills
+            </a>
 
-          <a href='#contato' onClick={closeMenu}>
-            Contato
-          </a>
-        </nav>
+            <a href='#projetos' onClick={closeMenu}>
+              Projetos
+            </a>
 
-        <button
-          className='menu-button'
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label='Abrir menu'
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-    </header>
+            <a href='#contato' onClick={closeMenu}>
+              Contato
+            </a>
+          </nav>
+
+          <button
+            className='menu-button'
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label='Abrir menu'
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </header>
     </>
   );
 }

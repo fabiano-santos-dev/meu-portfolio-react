@@ -1,6 +1,7 @@
 import '../css/hero.css';
 import { ArrowRight, Download, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import fotoPerfil_hero from '../assets/fs1.png';
 
 function Hero() {
   return (
@@ -19,9 +20,9 @@ function Hero() {
             <h2>Desenvolvedor Web</h2>
 
             <p className='hero-description'>
-              Sou estudante de Analise e Desenvolvimento de Sistemas e estou construindo minha
-              experiência através de projetos modernos, funcionais e
-              responsivos.
+              Sou estudante de Analise e Desenvolvimento de Sistemas e estou
+              construindo minha experiência através de projetos modernos,
+              funcionais e responsivos.
             </p>
 
             <div className='hero-buttons'>
@@ -63,7 +64,11 @@ function Hero() {
 
           <div className='hero-image'>
             <div className='hero-circle'></div>
-            <img src='/fs1.png' alt='Fabiano Alves' className='profile-image' />
+            <img
+              src={fotoPerfil_hero}
+              alt='Fabiano Alves'
+              className='profile-image'
+            />
           </div>
         </div>
       </section>
